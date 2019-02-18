@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="基于Django的视频点播网站">
+    <link rel="icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <title>视点</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/semantic-ui/2.4.1/semantic.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/semantic-ui/2.4.1/semantic.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/semantic.custom.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body>
+<!--header-->
+<div class="ui sticky fixed  menu">
+    <div class="ui container">
+        <a href="/" class="borderless header item">
+            <img class="logo" src="../static/img/logo.png">
+            视点
+        </a>
+        <div class="v-header-extra">
+            <div class="ui small icon input v-video-search">
+                <input class="prompt" value="" type="text" placeholder="搜索视频" id="v-search">
+                <i id="search" class="search icon" style="cursor:pointer;"></i>
+            </div>
+            <a class="ui tiny secondary basic button" id="v-header-login" href="/users/login/?next=/">登录</a>
+        </div>
+    </div>
+</div>
+<!--content-->
+<div class="ui container" id="v-content">
+
+    <div class="classification">
+        <a class="ui red label" href="/">全部</a>
+        <a class="ui  label" href="?c=1">教育</a>
+        <a class="ui  label" href="?c=2">财经</a>
+        <a class="ui  label" href="?c=3">体育</a>
+    </div>
+
+    <div class="ui hidden divider"></div>
+
+    <div class="ui grid">
+        <div class="four wide column">
+            <div class="ui card">
+                <a class="image" href="/video/detail/25/">
+                    <img class="ui image" src="../static/upload/6.jpg">
+                    <i class="large play icon v-play-icon"></i>
+                </a>
+                <div class="content">
+                    <a class="header" href="/video/detail/25/">欧冠梅西精彩进球</a>
+                    <div class="meta">
+                        <span class="date">发布于6天前</span>
+                    </div>
+                    <div class="description">
+                        230次观看
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card">
+                <a class="image" href="/video/detail/25/">
+                    <img class="ui image" src="../static/upload/f5243c9cff7f1b9f2812fa4d3d12868b.jpg">
+                    <i class="large play icon v-play-icon"></i>
+                </a>
+                <div class="content">
+                    <a class="header" href="/video/detail/25/">欧冠梅西精彩进球</a>
+                    <div class="meta">
+                        <span class="date">发布于6天前</span>
+                    </div>
+                    <div class="description">
+                        230次观看
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card">
+                <a class="image" href="/video/detail/25/">
+                    <img class="ui image" src="../static/upload/f5243c9cff7f1b9f2812fa4d3d12868b.jpg">
+                    <i class="large play icon v-play-icon"></i>
+                </a>
+                <div class="content">
+                    <a class="header" href="/video/detail/25/">欧冠梅西精彩进球</a>
+                    <div class="meta">
+                        <span class="date">发布于6天前</span>
+                    </div>
+                    <div class="description">
+                        230次观看
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card">
+                <a class="image" href="/video/detail/25/">
+                    <img class="ui image" src="../static/upload/f5243c9cff7f1b9f2812fa4d3d12868b.jpg">
+                    <i class="large play icon v-play-icon"></i>
+                </a>
+                <div class="content">
+                    <a class="header" href="/video/detail/25/">欧冠梅西精彩进球</a>
+                    <div class="meta">
+                        <span class="date">发布于6天前</span>
+                    </div>
+                    <div class="description">
+                        230次观看
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card">
+                <a class="image" href="/video/detail/25/">
+                    <img class="ui image" src="../static/upload/6.jpg">
+                    <i class="large play icon v-play-icon"></i>
+                </a>
+                <div class="content">
+                    <a class="header" href="/video/detail/25/">欧冠梅西精彩进球</a>
+                    <div class="meta">
+                        <span class="date">发布于6天前</span>
+                    </div>
+                    <div class="description">
+                        230次观看
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card">
+                <a class="image" href="/video/detail/25/">
+                    <img class="ui image" src="../static/upload/f5243c9cff7f1b9f2812fa4d3d12868b.jpg">
+                    <i class="large play icon v-play-icon"></i>
+                </a>
+                <div class="content">
+                    <a class="header" href="/video/detail/25/">欧冠梅西精彩进球</a>
+                    <div class="meta">
+                        <span class="date">发布于6天前</span>
+                    </div>
+                    <div class="description">
+                        230次观看
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card">
+                <a class="image" href="/video/detail/25/">
+                    <img class="ui image" src="../static/upload/f5243c9cff7f1b9f2812fa4d3d12868b.jpg">
+                    <i class="large play icon v-play-icon"></i>
+                </a>
+                <div class="content">
+                    <a class="header" href="/video/detail/25/">欧冠梅西精彩进球</a>
+                    <div class="meta">
+                        <span class="date">发布于6天前</span>
+                    </div>
+                    <div class="description">
+                        230次观看
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card">
+                <a class="image" href="/video/detail/25/">
+                    <img class="ui image" src="../static/upload/f5243c9cff7f1b9f2812fa4d3d12868b.jpg">
+                    <i class="large play icon v-play-icon"></i>
+                </a>
+                <div class="content">
+                    <a class="header" href="/video/detail/25/">欧冠梅西精彩进球</a>
+                    <div class="meta">
+                        <span class="date">发布于6天前</span>
+                    </div>
+                    <div class="description">
+                        230次观看
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card">
+                <a class="image" href="/video/detail/25/">
+                    <img class="ui image" src="../static/upload/6.jpg">
+                    <i class="large play icon v-play-icon"></i>
+                </a>
+                <div class="content">
+                    <a class="header" href="/video/detail/25/">欧冠梅西精彩进球</a>
+                    <div class="meta">
+                        <span class="date">发布于6天前</span>
+                    </div>
+                    <div class="description">
+                        230次观看
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card">
+                <a class="image" href="/video/detail/25/">
+                    <img class="ui image" src="../static/upload/f5243c9cff7f1b9f2812fa4d3d12868b.jpg">
+                    <i class="large play icon v-play-icon"></i>
+                </a>
+                <div class="content">
+                    <a class="header" href="/video/detail/25/">欧冠梅西精彩进球</a>
+                    <div class="meta">
+                        <span class="date">发布于6天前</span>
+                    </div>
+                    <div class="description">
+                        230次观看
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card">
+                <a class="image" href="/video/detail/25/">
+                    <img class="ui image" src="../static/upload/f5243c9cff7f1b9f2812fa4d3d12868b.jpg">
+                    <i class="large play icon v-play-icon"></i>
+                </a>
+                <div class="content">
+                    <a class="header" href="/video/detail/25/">欧冠梅西精彩进球</a>
+                    <div class="meta">
+                        <span class="date">发布于6天前</span>
+                    </div>
+                    <div class="description">
+                        230次观看
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card">
+                <a class="image" href="/video/detail/25/">
+                    <img class="ui image" src="../static/upload/f5243c9cff7f1b9f2812fa4d3d12868b.jpg">
+                    <i class="large play icon v-play-icon"></i>
+                </a>
+                <div class="content">
+                    <a class="header" href="/video/detail/25/">欧冠梅西精彩进球</a>
+                    <div class="meta">
+                        <span class="date">发布于6天前</span>
+                    </div>
+                    <div class="description">
+                        230次观看
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--page-->
+<div class="video-page">
+    <div class="ui circular labels">
+        <a class="ui red circular label">1</a>
+        <a class="ui circular label" href="?page=2">2</a>
+        <a class="ui circular label" href="?page=3">3</a>
+        <a class="ui circular label" href="?page=2">&gt;</a>
+    </div>
+</div>
+
+<!--footer-->
+<div class="ui vertical footer segment ">
+    <div class="ui center aligned container">
+        <div class="ui divider"></div>
+        <img src="../static/img/logo.png" class="ui centered mini image">
+        <div class="ui horizontal   small divided link list">
+            <a class="item" href="#">北京堆栈科技有限公司</a>
+            <a class="item" href="#">联系我们</a>
+            <a class="item" href="#">京ICP证090287</a>
+        </div>
+    </div>
+</div>
+
+
+<!--js-->
+<script>
+    var search_url = "{% url 'video:search' %}"
+</script>
+<script src="../static/js/header.js"></script>
+
+</body>
+</html>
